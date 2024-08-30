@@ -14,4 +14,4 @@ Simple bash command installer for tailwindcss, automates the entire [installatio
 
 ### default
 
-[Default tailwindcss install](https://tailwindcss.com/docs/installation) (no frameworks).
+Default tailwindcss install (no frameworks).
