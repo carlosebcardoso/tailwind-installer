@@ -9,6 +9,7 @@
 Simple bash command installer for tailwindcss, automates the entire [installation proccess](https://tailwindcss.com/docs/installation) for different installs.
 
 ## Installation
+[WIP]
 
 ## Commands
 
