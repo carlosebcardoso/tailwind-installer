@@ -1,11 +1,15 @@
 #!/bin/bash
 
+help=$"--h: shows available commands
+default: default tailwindcss installation
+vue: tailwindcss installation for VueJS"
+
 function tailwind() {
   case $1 in
-    "-h")
-   	printf "default: tailwind default installation without any framework"
-   	;;
-   	
+    "--h")
+    echo "$help"
+    ;;
+    
     "default")
 	npm init -y
 
@@ -49,7 +53,7 @@ module.exports = {
 	sed -i '7 i \ \ \ \ "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"' package.json
       ;;
     *)
-    printf "no model found"
+    echo "$help"
     ;;
   esac
 }
