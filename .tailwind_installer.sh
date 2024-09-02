@@ -2,7 +2,9 @@
 
 help=$"--h: shows available commands
 default: default tailwindcss installation
-vue: tailwindcss installation for VueJS"
+vue: tailwindcss installation for VueJS
+vue -c: installs tailwindcss for VueJS and removes default boilerplate
+vue -c -r: installs tailwindcss for VueJS and removes default vue router boilerplate"
 
 
 function tailwind() {
