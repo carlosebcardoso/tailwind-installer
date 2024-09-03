@@ -2,10 +2,7 @@
 
 help=$"--h: shows available commands
 default: default tailwindcss installation
-vue: tailwindcss installation for VueJS
-vue -c: installs tailwindcss for VueJS and removes default boilerplate
-vue -c -r: installs tailwindcss for VueJS and removes default vue router boilerplate"
-
+vue: tailwindcss installation for VueJS"
 
 function tailwind() {
   function defaultInstall() {
@@ -89,7 +86,7 @@ export default {
 
 
     "vue")
-      if [ $2 = '-c' ]; then
+      if [[ "$*" == *"-c"* ]]; then
         echo clear
         rm src/assets/*.*
         rm src/components/icons/*.*
@@ -106,7 +103,7 @@ export default {
     Hello world!
   </h1>
 </template>' > src/App.vue
-        if [ $3 = '-r' ]; then
+        if [[ "$*" == *"-r"* ]]; then
           echo router
           rm src/views/*.*
           printf "import { createRouter, createWebHistory } from 'vue-router'
